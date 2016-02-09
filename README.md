@@ -32,7 +32,7 @@ protected $middleware = [
 ```
 - **Copy the included instantclick.js** to your proper public asset folder then include it at your layout file like this:
 ```html
-		<script src=“/path/to/instantclick.js” data-no-instant></script>
+	<script src=“/path/to/instantclick.js” data-no-instant></script>
     <script data-no-instant>InstantClick.init();</script>
 ```
 
