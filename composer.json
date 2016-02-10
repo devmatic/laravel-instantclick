@@ -4,7 +4,8 @@
     "keywords": [
         "diaafares",
         "Laravel-InstantClick",
-        "instantclick"
+        "instantclick",
+        "laravel"
     ],
     "homepage": "https://github.com/diaafares/laravel-instantclick",
     "license": "MIT",
