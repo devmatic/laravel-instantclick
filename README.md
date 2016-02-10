@@ -10,15 +10,17 @@ InstantClick uses pushState and Ajax (a combo known as pjax), replacing only the
 
 This package provides a middleware that can return the response that this plugin expects.
 
+## Overview
+// TODO
 
-## Installation
+## Installation & Usage
 
-You can install the package via composer:
+- You can install the package via composer:
 ``` bash
 $ composer require diaafares/laravel-instantclick
 ```
 
-Next you must add the `\DiaaFares\InstantClick\Middleware\FilterIfInstantClick`-middleware to the kernel.
+- Next you must add the `\DiaaFares\InstantClick\Middleware\FilterIfInstantClick`-middleware to the kernel.
 ```php
 // app/Http/Kernel.php
 
@@ -28,14 +30,22 @@ protected $middleware = [
     \DiaaFares\InstantClick\Middleware\FilterIfInstantClick::class,
 ];
 ```
+- **Copy the included instantclick.js** to your proper public asset folder then include it at your layout file like this:
+```html
+		<script src=“/path/to/instantclick.js” data-no-instant></script>
+    <script data-no-instant>InstantClick.init();</script>
+```
 
-## Usage
+- Please refer to [InstantClient documentation](http://instantclick.io/documentation) to know more about InstantClient options and how it works.
 
+
+## Important Note
+please use the included instantclick.js file because I modify it by adding $xhr.setRequestHeader(‘X-INSTANTCLICK’, true) to give the middleware the ability to identify InstantClient requests and give the proper response to it.
 
 
 ## How it Works
 
-The provided middleware provides [the behaviour that the pjax plugin expects of the server](https://github.com/defunkt/jquery-pjax#server-side):
+The provided middleware provides the behaviour that the Instant Click plugin expects of the server:
 
 > An X-INSTANTCLICK request header is set to differentiate a InstantClick request from normal XHR requests. 
 > In this case, if the request is InstantClick, we skip the layout html and just render the inner
