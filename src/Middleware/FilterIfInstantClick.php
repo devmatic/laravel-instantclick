@@ -34,10 +34,6 @@ class FilterIfInstantClick
 
         $this->filterResponse($response, $container = 'body');
 
-//        $this->filterResponse($response, $request->header('X-InstantClick-Container'))
-//            ->setUriHeader($response, $request)
-//            ->setVersionHeader($response, $request);
-
         return $response;
     }
 
@@ -118,37 +114,6 @@ class FilterIfInstantClick
     {
         return $request->headers->get('X-INSTANTCLICK') == true;
     }
-
-//    /**
-//     * @param \Illuminate\Http\Response $response
-//     * @param \Illuminate\Http\Request  $request
-//     *
-//     * @return $this
-//     */
-//    protected function setUriHeader(Response $response, Request $request)
-//    {
-//        $response->header('X-PJAX-URL', $request->getRequestUri());
-//
-//        return $this;
-//    }
-
-//    /**
-//     * @param \Illuminate\Http\Response $response
-//     * @param \Illuminate\Http\Request  $request
-//     *
-//     * @return $this
-//     */
-//    protected function setVersionHeader(Response $response, Request $request)
-//    {
-//        $crawler = $this->getCrawler($response);
-//        $node = $crawler->filter('head > meta[http-equiv]');
-//
-//        if ($node->count()) {
-//            $response->header('X-PJAX-Version', $node->attr('content'));
-//        }
-//
-//        return $this;
-//    }
 
 
 }
