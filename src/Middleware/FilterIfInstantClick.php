@@ -32,7 +32,8 @@ class FilterIfInstantClick
             return $response;
         }
 
-        $this->filterResponse($response, $container = 'body');
+        $this->filterResponse($response, $container = 'body')
+            ->setResponseHeader($response);
 
         return $response;
     }
@@ -115,5 +116,18 @@ class FilterIfInstantClick
         return $request->headers->get('X-INSTANTCLICK') == true;
     }
 
+    /**
+     * @param \Illuminate\Http\Response $response
+     *
+     * @return $this
+     * @internal param \Illuminate\Http\Request $request
+     *
+     */
+    protected function setResponseHeader(Response $response)
+    {
+        $response->header('X-INSTANTCLICK', true);
+
+        return $this;
+    }
 
 }
