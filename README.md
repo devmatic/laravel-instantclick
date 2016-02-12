@@ -10,8 +10,8 @@ InstantClick uses pushState and Ajax (a combo known as pjax), replacing only the
 
 This package provides a middleware that can return the response that this plugin expects.
 
-## Overview
-// TODO
+## Video Tutorial & Overview
+[![IMAGE ALT TEXT HERE](http://img.youtube.com/vi/IGv8dzD5rQA/0.jpg)](http://www.youtube.com/watch?v=IGv8dzD5rQA)
 
 ## Installation & Usage
 
@@ -32,7 +32,7 @@ protected $middleware = [
 ```
 - **Copy the included instantclick.js** to your proper public asset folder then include it at your layout file like this:
 ```html
-	<script src=“/path/to/instantclick.js” data-no-instant></script>
+	<script src="/path/to/instantclick.js" data-no-instant></script>
     <script data-no-instant>InstantClick.init();</script>
 ```
 
