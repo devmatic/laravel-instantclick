@@ -19,6 +19,6 @@ checks:
 
 build:
     environment:
-        php:
-            version: 5.6.9
+        php: '5.6.9'
+
 
