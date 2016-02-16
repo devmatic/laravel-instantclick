@@ -1,4 +1,10 @@
 # An InstantClick middleware for Laravel 5
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/diaafares/laravel-instantclick.svg?style=flat-square)](https://packagist.org/packages/diaafares/laravel-instantclick)
+[![Software License](https://img.shields.io/badge/license-MIT-brightgreen.svg?style=flat-square)](LICENSE.md)
+[![Build Status](https://img.shields.io/travis/diaafares/laravel-instantclick/master.svg?style=flat-square)](https://travis-ci.org/diaafares/laravel-instantclick)
+[![SensioLabsInsight](https://img.shields.io/sensiolabs/i/4c4ada94-d590-4c27-9118-dad4b5bebe73.svg?style=flat-square)](https://insight.sensiolabs.com/projects/4c4ada94-d590-4c27-9118-dad4b5bebe73)
+[![Quality Score](https://img.shields.io/scrutinizer/g/diaafares/laravel-instantclick.svg?style=flat-square)](https://scrutinizer-ci.com/g/diaafares/laravel-instantclick)
+[![Total Downloads](https://img.shields.io/packagist/dt/diaafares/laravel-instantclick.svg?style=flat-square)](https://packagist.org/packages/diaafares/laravel-instantclick)
 
 [InstantClick](https://github.com/dieulot/instantclick) is a plugin that makes following links in your website instant by leverages ajax to speed up the loading time of your pages. 
 
