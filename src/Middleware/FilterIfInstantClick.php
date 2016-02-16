@@ -28,7 +28,7 @@ class FilterIfInstantClick
     {
         $response = $next($request);
 
-        if (!$this->IsInstantClickRequest($request) || $response->isRedirection()) {
+        if (!$this->isInstantClickRequest($request) || $response->isRedirection()) {
             return $response;
         }
 
@@ -107,11 +107,11 @@ class FilterIfInstantClick
 
 
     /**
-     * Determine if the request is the result of an PJAX call.
+     * Determine if the request is the result of an InstantClick call.
      *
      * @return bool
      */
-    public function IsInstantClickRequest(Request $request)
+    public function isInstantClickRequest(Request $request)
     {
         return $request->headers->get('X-INSTANTCLICK') == true;
     }
@@ -125,7 +125,7 @@ class FilterIfInstantClick
      */
     protected function setResponseHeader(Response $response)
     {
-        $response->header('X-INSTANTCLICK', true);
+        $response->header('X-INSTANTCLICK', "true");
 
         return $this;
     }
