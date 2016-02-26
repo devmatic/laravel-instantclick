@@ -1,6 +1,6 @@
 <?php
 
-namespace DiaaFares\InstantClick\Middleware;
+namespace Devmatic\InstantClick\Middleware;
 
 use Closure;
 use Illuminate\Http\Request;

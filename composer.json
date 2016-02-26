@@ -1,19 +1,20 @@
 {
-    "name": "diaafares/laravel-instantclick",
+    "name": "devmatic/laravel-instantclick",
     "description": "An InstantClick middleware for Laravel 5",
     "keywords": [
+        "Devmatic",
         "diaafares",
         "Laravel-InstantClick",
         "instantclick",
         "laravel"
     ],
-    "homepage": "https://github.com/diaafares/laravel-instantclick",
+    "homepage": "https://github.com/devmatic/laravel-instantclick",
     "license": "MIT",
     "authors": [
         {
             "name": "Diaa Fares",
             "email": "diaafares@gmail.com",
-            "homepage": "https://github.com/DiaaFares/",
+            "homepage": "https://github.com/Devmatic/",
             "role": "Developer"
         }
     ],
@@ -30,12 +31,12 @@
     },
     "autoload": {
         "psr-4": {
-            "DiaaFares\\InstantClick\\": "src"
+            "Devmatic\\InstantClick\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "DiaaFares\\InstantClick\\Test\\": "tests"
+            "Devmatic\\InstantClick\\Test\\": "tests"
         }
     },
     "scripts": {

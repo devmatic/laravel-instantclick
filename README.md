@@ -23,17 +23,17 @@ This package provides a middleware that can return the response that this plugin
 
 - You can install the package via composer:
 ``` bash
-$ composer require diaafares/laravel-instantclick
+$ composer require devmatic/laravel-instantclick
 ```
 
-- Next you must add the `\DiaaFares\InstantClick\Middleware\FilterIfInstantClick`-middleware to the kernel.
+- Next you must add the `\Devmatic\InstantClick\Middleware\FilterIfInstantClick`-middleware to the kernel.
 ```php
 // app/Http/Kernel.php
 
 ...
 protected $middleware = [
     ...
-    \DiaaFares\InstantClick\Middleware\FilterIfInstantClick::class,
+    \Devmatic\InstantClick\Middleware\FilterIfInstantClick::class,
 ];
 ```
 - **Copy the included instantclick.js** to your proper public asset folder then include it at your layout file like this:

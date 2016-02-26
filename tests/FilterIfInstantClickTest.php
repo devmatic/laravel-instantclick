@@ -1,9 +1,9 @@
 <?php
 
-namespace DiaaFares\InstantClick\Test;
+namespace Devmatic\InstantClick\Test;
 
 use Illuminate\Http\Request;
-use DiaaFares\InstantClick\Middleware\FilterIfInstantClick;
+use Devmatic\InstantClick\Middleware\FilterIfInstantClick;
 use Symfony\Component\HttpFoundation\Response;
 
 class FilterIfInstantClickTest extends \PHPUnit_Framework_TestCase
