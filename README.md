@@ -4,13 +4,13 @@
 [![Build Status](https://img.shields.io/travis/devmatic/laravel-instantclick/master.svg?style=flat-square)](https://travis-ci.org/devmatic/laravel-instantclick)
 [![SensioLabsInsight](https://img.shields.io/sensiolabs/i/5ea5f3e8-e5fd-43b6-8b89-7c6845868eee.svg?style=flat-square)](https://insight.sensiolabs.com/projects/4c4ada94-d590-4c27-9118-dad4b5bebe73)
 [![Quality Score](https://img.shields.io/scrutinizer/g/diaafares/laravel-instantclick.svg?style=flat-square)](https://scrutinizer-ci.com/g/devmatic/laravel-instantclick)
-[![Total Downloads](https://img.shields.io/packagist/dt/devmatic/laravel-instantclick.svg?style=flat-square)](https://packagist.org/packages/diaafares/laravel-instantclick)
+[![Total Downloads](https://img.shields.io/packagist/dt/devmatic/laravel-instantclick.svg?style=flat-square)](https://packagist.org/packages/devmatic/laravel-instantclick)
 
 [InstantClick](https://github.com/dieulot/instantclick) is a plugin that makes following links in your website instant by leverages ajax to speed up the loading time of your pages. 
 
 InstantClick uses pushState and Ajax (a combo known as pjax), replacing only the body and the title in the head.
 
-Devmatic is a web development company aims to make developers life easier. You’ll find an overview of all our projects on our [website](http://devmaic.co).
+Devmatic is a web development company aims to make developers life easier. You’ll find an overview of all our projects on our [website](http://devmatic.co).
 
 # Ajax brings two nice benefits in and of itself:
 -     Your browser doesn’t have to throw and recompile scripts and styles on each page change anymore.
